@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
@@ -9,9 +9,9 @@ import PricingCardOne from '@/components/sections/pricing/PricingCardOne';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
-import { Gift, Home, MessageCircle, Phone, Sparkles, Star, TrendingUp } from "lucide-react";
+import { Gift, HouseIcon, MessageCircle, Phone, Sparkles, Star, TrendingUp } from "lucide-react";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <ThemeProvider
       defaultButtonVariant="slide-background"
@@ -38,7 +38,7 @@ export default function Home() {
           tag="5-Star Excellence"
           tagIcon={Star}
           imageSrc="https://images.pexels.com/photos/15447099/pexels-photo-15447099.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          imageAlt="Grand Vista Hotel exterior at sunset"
+          imageAlt="Upscale Ritz hotel facade in Lisbon captured during a golden sunset, showcasing modern urban architecture."
           imagePosition="right"
           buttons={[
             { text: "Book Now", href: "https://booking.grandvista.com" },
@@ -59,21 +59,21 @@ export default function Home() {
               title: "Serenity Spa & Wellness",
               description: "Rejuvenate your mind and body in our award-winning spa featuring premium treatments and tranquil relaxation areas.",
               imageSrc: "https://images.pexels.com/photos/3902730/pexels-photo-3902730.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Luxury spa and wellness center"
+              imageAlt: "A woman adjusts her hair while looking into a mirror in a changing room."
             },
             {
               id: "02",
               title: "Gourmet Dining Experience",
               description: "Savor exquisite cuisine crafted by renowned chefs in our elegant restaurants with breathtaking city views.",
               imageSrc: "https://images.pexels.com/photos/2566037/pexels-photo-2566037.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Fine dining restaurant interior"
+              imageAlt: "A stylish dining scene featuring a gourmet meal and a glass of white wine by a window."
             },
             {
               id: "03",
               title: "Infinity Pool & Terrace",
               description: "Unwind in our stunning infinity pool overlooking the city skyline, perfect for relaxation and memorable moments.",
               imageSrc: "https://images.pexels.com/photos/2736187/pexels-photo-2736187.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Hotel infinity pool with city view"
+              imageAlt: "Experience relaxation at a stunning rooftop infinity pool with a panoramic cityscape view."
             }
           ]}
         />
@@ -84,28 +84,28 @@ export default function Home() {
           title="Elegant Accommodations"
           description="Choose from our carefully curated selection of rooms and suites, each designed with luxury and comfort in mind."
           tag="Our Rooms"
-          tagIcon={Home}
+          tagIcon={HouseIcon}
           products={[
             {
               id: "deluxe",
               name: "Deluxe King Room",
               price: "$299/night",
               imageSrc: "https://images.pexels.com/photos/3659683/pexels-photo-3659683.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Deluxe king room with city view"
+              imageAlt: "Bright and airy modern bedroom in Istanbul with minimalist design and luxury amenities."
             },
             {
               id: "suite",
               name: "Presidential Suite",
               price: "$899/night",
               imageSrc: "https://images.pexels.com/photos/14917460/pexels-photo-14917460.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Presidential suite living area"
+              imageAlt: "A stylish hotel room featuring a cozy bed, sofa, and luxurious decor."
             },
             {
               id: "standard",
               name: "Standard Double Room",
               price: "$199/night",
               imageSrc: "https://images.pexels.com/photos/2736388/pexels-photo-2736388.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Standard double room modern decor"
+              imageAlt: "Inviting hotel room with comfortable bedding and ambient lighting, perfect for relaxation and luxury stay."
             }
           ]}
         />
@@ -165,7 +165,7 @@ export default function Home() {
               company: "Corporate Travel",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/8425032/pexels-photo-8425032.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Sarah Johnson testimonial photo"
+              imageAlt: "Stylish senior woman in a suit adjusting her glasses while sitting in a car."
             },
             {
               id: "2",
@@ -174,7 +174,7 @@ export default function Home() {
               company: "Family Vacation",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/3770093/pexels-photo-3770093.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "James Mitchell testimonial photo"
+              imageAlt: "Smiling waiter stands in an elegant restaurant interior, exuding warmth and professionalism."
             },
             {
               id: "3",
@@ -183,7 +183,7 @@ export default function Home() {
               company: "Luxury Reviews",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/3754312/pexels-photo-3754312.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Maria Rodriguez testimonial photo"
+              imageAlt: "Smiling woman in summer top looking at camera through opened window sitting on backseat in car during road trip"
             },
             {
               id: "4",
@@ -192,7 +192,7 @@ export default function Home() {
               company: "Special Event",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/5378708/pexels-photo-5378708.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "David Chen testimonial photo"
+              imageAlt: "Elegant portrait of a hotel porter in uniform with a classic setting and leafy backdrop."
             },
             {
               id: "5",
@@ -201,7 +201,7 @@ export default function Home() {
               company: "Business Events",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/8425032/pexels-photo-8425032.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Emily Watson testimonial photo"
+              imageAlt: "Stylish senior woman in a suit adjusting her glasses while sitting in a car."
             }
           ]}
         />
@@ -214,7 +214,7 @@ export default function Home() {
           description="Contact our reservations team or subscribe to our newsletter for exclusive offers and updates about Grand Vista Hotel."
           tagIcon={Phone}
           imageSrc="https://images.pexels.com/photos/189295/pexels-photo-189295.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          imageAlt="Hotel lobby reception area"
+          imageAlt="Elegant lobby with comfortable sofas, large windows, and natural light enhancing the indoor ambiance."
           mediaPosition="left"
           inputPlaceholder="Enter your email for offers"
           buttonText="Subscribe"
